@@ -12,14 +12,26 @@ div.image-size {
 
 <script>
 
-import {library} from "@fortawesome/fontawesome-svg-core";
+
+import {icon} from "@fortawesome/fontawesome-svg-core";
 import {faGithub} from "@fortawesome/free-brands-svg-icons"
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons"
 import {faKey} from "@fortawesome/free-solid-svg-icons"
+import {defineComponent} from "vue";
 
-library.add(faGithub)
-library.add(faKey)
-library.add(faLinkedin)
+export default defineComponent({
+  data() {
+    return {
+      faGithub: faGithub,
+      faLinkedin: faLinkedin,
+      faKey: faKey
+    }
+  },
+  methods: {
+    icon: icon
+  }
+})
+
 
 </script>
 
@@ -49,15 +61,15 @@ library.add(faLinkedin)
         <div class="flex justify-center flex-row flex-wrap gap-12 ">
           <a href="https://github.com/orbatschow/" target="_blank"
              class="hero-contact flex flex-row items-center">
-            <font-awesome-icon :icon="['fab', 'github']"/>
+            <div v-html=icon(faGithub).html[0] />
           </a>
           <a href="https://keys.openpgp.org/search?q=EDE3+F6C5+CFCC+20A9+53FF++2E91+0F9E+4305+534A+2380" target="_blank"
              class="hero-contact flex flex-row items-center">
-            <font-awesome-icon :icon="['fas', 'key']"/>
+            <div v-html=icon(faKey).html[0] />
           </a>
           <a href="https://www.linkedin.com/in/nils-orbat/" target="_blank"
              class="hero-contact flex flex-row items-center">
-            <font-awesome-icon :class="asd" :icon="['fab', 'linkedin']"/>
+            <div v-html=icon(faLinkedin).html[0] />
           </a>
         </div>
       </div>
@@ -79,17 +91,17 @@ library.add(faLinkedin)
         <div class="flex flex-row flex-wrap mt-8 gap-8 ">
           <a href="https://github.com/orbatschow/" target="_blank"
              class="hero-contact flex flex-row items-center gap-4 text-xl font-semibold">
-            <font-awesome-icon :icon="['fab', 'github']"/>
+             <div v-html=icon(faGithub).html[0] />
             <div>Github</div>
           </a>
           <a href="https://keys.openpgp.org/search?q=EDE3+F6C5+CFCC+20A9+53FF++2E91+0F9E+4305+534A+2380" target="_blank"
              class="hero-contact flex flex-row items-center gap-4 text-xl font-semibold">
-            <font-awesome-icon :icon="['fas', 'key']"/>
+            <div v-html=icon(faKey).html[0] />
             <div>OpenPGP</div>
           </a>
           <a href="https://www.linkedin.com/in/nils-orbat/" target="_blank"
              class="hero-contact flex flex-row items-center gap-4 text-xl font-semibold">
-            <font-awesome-icon :class="asd" :icon="['fab', 'linkedin']"/>
+            <div v-html=icon(faLinkedin).html[0] />
             <div>LinkedIn</div>
           </a>
         </div>
