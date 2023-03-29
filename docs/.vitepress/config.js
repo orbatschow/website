@@ -18,6 +18,8 @@ export default defineConfig({
         lineNumbers: true
     },
 
-    outDir: path.resolve(process.cwd(), `public`)
+    outDir: path.resolve(process.cwd(), `public`),
+
+    appearance: "dark"
 })
 
