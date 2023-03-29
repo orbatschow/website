@@ -1,0 +1,20 @@
+name: release
+
+# run only on master branch
+'on':
+  push:
+    branches:
+      - master
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: 'pnpm i && pnpm run docs:build'
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_DEFAULT_352118 }}'
+          channelId: live
+          projectId: default-352118

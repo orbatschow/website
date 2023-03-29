@@ -1,0 +1,23 @@
+#app {
+    min-height: 100vh;
+}
+
+a {
+    transition: color 0.4s;
+}
+
+:root {
+    --vp-font-family-base: 'Source Code Pro', monospace;
+    --vp-font-family-mono: 'Source Code Pro', monospace;
+
+    --vp-c-brand: #ffd900;
+    --vp-c-brand-dark: #ffd900;
+}
+
+.vp-doc a {
+    transition: opacity 0.25s;
+}
+
+.vp-doc a:hover {
+    opacity: 0.7;
+}

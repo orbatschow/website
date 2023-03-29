@@ -1,0 +1,53 @@
+{
+  "name": "orbat-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev docs --host",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/orbatschow/orbat-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/orbatschow/orbat-ui/issues"
+  },
+  "homepage": "https://gitlab.com/orbatschow/orbat-ui#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "husky": "^8.0.3",
+    "sass": "^1.60.0",
+    "tailwindcss": "^3.2.7",
+    "vitepress": "^1.0.0-alpha.56",
+    "vue": "^3.2.47"
+  },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {},
+      "autoprefixer": {}
+    }
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search"
+      ]
+    }
+  },
+  "dependencies": {
+    "@fontsource/source-code-pro": "^4.5.14",
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/free-brands-svg-icons": "^6.3.0",
+    "@fortawesome/free-regular-svg-icons": "^6.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/vue-fontawesome": "^3.0.3",
+    "gray-matter": "^4.0.3",
+    "hamburgers": "^1.2.1",
+    "markdown-it-anchor": "^8.6.7"
+  }
+}
