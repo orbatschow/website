@@ -15,6 +15,6 @@ export default defineConfig({
 
     outDir: path.resolve(process.cwd(), `public`),
 
-    appearance: "dark"
+    appearance: 'dark'
 })
 
