@@ -1,3 +1,7 @@
+---
+title: legal
+---
+
 Impressum
 =========
 

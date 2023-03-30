@@ -21,7 +21,6 @@ const {frontmatter} = useData()
 
       <Content class="vp-doc mb-auto mt-6"/>
 
-
       <Footer/>
     </section>
   </main>
