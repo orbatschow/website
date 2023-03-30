@@ -60,7 +60,7 @@ export default {
     <nav class="flex-row self-end hidden sm:flex">
       <ul class="flex text-end gap-x-8">
         <li>
-          <a class="hover:text-secondary" v-on:click="closeMobileMenu" href="/about">about</a>
+          <a class="hover:text-secondary" v-on:click="closeMobileMenu" href="/about/">about</a>
         </li>
         <li>
           <a class="hover:text-secondary" v-on:click="closeMobileMenu" href="/blog/">blog</a>
@@ -72,7 +72,7 @@ export default {
     <section ref="mobile-menu"
              class="!bg-primary flex flex-col absolute left-0 right-0 top-20 hidden transition-transform z-10">
       <ul class="flex flex-col text-end border-t">
-        <a class="hover:text-secondary" v-on:click="toggleMobileMenu" href="/about">
+        <a class="hover:text-secondary" v-on:click="toggleMobileMenu" href="/about/">
           <li class="ml-auto w-full py-6  border-b">
             about
           </li>

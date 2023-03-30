@@ -3,3 +3,4 @@ docs/.vitepress/cache
 *.img
 public
 firebase-debug.log
+.firebase

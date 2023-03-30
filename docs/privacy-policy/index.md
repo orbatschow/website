@@ -35,7 +35,7 @@ E-Mail-Adresse:
 
 Impressum:
 
-[https://orbat.sh/legal](https://orbat.sh/legal)
+[https://orbat.sh/legal/](https://orbat.sh/legal/)
 
 Übersicht der Verarbeitungen
 ----------------------------
