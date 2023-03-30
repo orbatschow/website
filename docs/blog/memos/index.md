@@ -23,7 +23,7 @@ I suggest you have a look at [kind](https://kind.sigs.k8s.io/).
 
 ## Memos
 
-Structured note-taking is a pretty tough task on its own, there are a lot of Open-Source projects,
+Structured note-taking is a pretty tough task on its own, there are a lot of opens-source projects,
 that try to solve this in different ways. You can find an up-to-date list of available projects
 on [GitHub](https://github.com/awesome-selfhosted/awesome-selfhosted#note-taking--editors).
 

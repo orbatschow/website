@@ -21,7 +21,7 @@ description: |
 
 ### Hardware
 
-In order to follow this post you need to fulfill several hardware requirements:
+In order to follow this post you need to own this hardware:
 
 - [Raspberry Pi](https://www.raspberrypi.com/products)
 
@@ -162,7 +162,8 @@ Remember to change your SSH key within the `99_user.cfg` file and only use your 
 #### Datasource
 
 The datasource within cloud-init is usually used to determine metadata for a cloud provider.
-As we don't want to manage this server, we can simply create a file called `99_datasource.cfg`.
+As we do bare metal provisioning here, and we don't manage a cloud metadata server we need to 
+create a file called `99_datasource.cfg`, that will specify the `NoCloud` property.
 
 ::: code-group
 <<< @/blog/raspberry-pi-packer/code/files/etc/cloud/cloud.cfg.d/99_datasource.cfg{yaml}
@@ -179,6 +180,18 @@ docker run --rm --privileged -v /dev:/dev -v $PWD:/build mkaczanowski/packer-bui
 ```
 
 This will generate an image, that can be flashed onto a micro sd card:
+
+The command mentioned above will use [packer-builder-arm](https://github.com/mkaczanowski/packer-builder-arm),
+an opens-source project, that will stich all the pieces together and instruct packer to build the image. Have
+a look at their documentation and examples for deeper insights.
+
+::: tip
+Usually you can use a `plugins.pkr.hcl` file within your packer directory and packer will automatically download
+and configure all specified plugins. The plugin we're using does not fulfill some requirements for this to work.
+There is already an open [issue](https://github.com/mkaczanowski/packer-builder-arm/issues/100) on GitHub and I 
+will update this post, if this gets resolved.
+:::
+
 
 ```shell
 dd if=2022-09-26-raspios-bullseye-arm64-lite.img of=/dev/sdX bs=64k oflag=dsync status=progress
