@@ -58,7 +58,7 @@ export default defineComponent({
           Hi, I'm <span class="text-secondary">Nils</span>. I'm a Site Reliability Engineer and Open Source Enthusiast.
         </div>
 
-        <div class="flex justify-center flex-row flex-wrap gap-12 ">
+        <div class="flex justify-center flex-row flex-wrap gap-14 text-2xl">
           <a href="https://github.com/orbatschow/" target="_blank"
              class="hero-contact flex flex-row items-center">
             <div v-html=icon(faGithub).html[0] />
