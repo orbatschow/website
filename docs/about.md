@@ -1,7 +1,3 @@
----
-layout: about
----
-
 # About me
 
 Hi, I'm Nils. I'm a Site Reliability Engineer and Open Source Enthusiast. Here 
