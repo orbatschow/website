@@ -98,7 +98,7 @@ export default {
     title: 'Senior DevOps Engineer',
     company: 'Vodafone GmbH',
     start: '12/2018',
-    end: '06/2019',
+    end: '05/2019',
     tags: [
         'python',
         'data science',
