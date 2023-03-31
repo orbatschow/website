@@ -15,11 +15,19 @@ import "@fontsource/source-code-pro"
 import "@fontsource/source-code-pro/600-italic.css"
 import "@fontsource/source-code-pro/600.css"
 
+// import fira code font
+import "@fontsource/fira-code/500.css"
+
+
+// import inline-svg component
+import InlineSvg from 'vue-inline-svg';
+
 export default {
     ...DefaultTheme,
     Layout: Layout,
     enhanceApp(ctx) {
         // extend default theme custom behaviour.
         DefaultTheme.enhanceApp(ctx)
+        ctx.app.component('inline-svg', InlineSvg);
     }
 }

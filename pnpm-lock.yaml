@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@fontsource/fira-code': ^4.5.13
   '@fontsource/source-code-pro': ^4.5.14
   '@fortawesome/fontawesome-svg-core': ^6.3.0
   '@fortawesome/free-brands-svg-icons': ^6.3.0
@@ -16,8 +17,10 @@ specifiers:
   tailwindcss: ^3.2.7
   vitepress: ^1.0.0-alpha.56
   vue: ^3.2.47
+  vue-inline-svg: ^3.1.2
 
 dependencies:
+  '@fontsource/fira-code': 4.5.13
   '@fontsource/source-code-pro': 4.5.14
   '@fortawesome/fontawesome-svg-core': 6.3.0
   '@fortawesome/free-brands-svg-icons': 6.3.0
@@ -27,6 +30,7 @@ dependencies:
   gray-matter: 4.0.3
   hamburgers: 1.2.1
   markdown-it-anchor: 8.6.7
+  vue-inline-svg: 3.1.2_vue@3.2.47
 
 devDependencies:
   autoprefixer: 10.4.14
@@ -409,6 +413,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@fontsource/fira-code/4.5.13:
+    resolution: {integrity: sha512-T1IG6/2AXSwEKwlrEm3kyIL3RQTMblPyj68HgnBGl0IBGFxgS5LZ7StRdDo/QimJ4Tz6FQGHuy1Y/ShNxaUefA==}
+    dev: false
 
   /@fontsource/source-code-pro/4.5.14:
     resolution: {integrity: sha512-EWE0djE7wFCBmExWa9oT1vIp+qj5MUroVvXWb9G7Ig4t4aXDd9QDidYZzMzNemb8gQxTdOzGmhx6EZnDTFMh5Q==}
@@ -1345,6 +1353,14 @@ packages:
     dependencies:
       vue: 3.2.47
     dev: true
+
+  /vue-inline-svg/3.1.2_vue@3.2.47:
+    resolution: {integrity: sha512-K01sLANBnjosObee4JrBu/igXpYIFhQfy4EcEyVWxEWf6nmrxp7Isz6pmeRCsWx6XGrGWfrQH3uNwt4nOmrFdA==}
+    peerDependencies:
+      vue: ^3
+    dependencies:
+      vue: 3.2.47
+    dev: false
 
   /vue/3.2.47:
     resolution: {integrity: sha512-60188y/9Dc9WVrAZeUVSDxRQOZ+z+y5nO2ts9jWXSTkMvayiWxCWOWtBQoYjLeccfXkiiPZWAHcV+WTPhkqJHQ==}

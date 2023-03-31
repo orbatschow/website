@@ -1,15 +1,14 @@
 <script setup>
 import Home from "./Home.vue";
 import Blog from "./Blog.vue";
+import Article from "./Article.vue";
+import NotFound from "./NotFound.vue";
 import Header from "./Header.vue";
 import Footer from "./Footer.vue";
 import {useData} from 'vitepress'
 
-const {frontmatter} = useData()
+const {page, frontmatter} = useData()
 </script>
-
-<style>
-</style>
 
 <template>
   <main class="min-h-screen mx-6 md:mx-10">
@@ -17,9 +16,10 @@ const {frontmatter} = useData()
       <Header/>
 
       <Home v-if="frontmatter.layout === 'home'"/>
-      <Blog v-if="frontmatter.layout === 'blog'"/>
+      <Blog v-else-if="frontmatter.layout === 'blog'"/>
+      <NotFound v-else-if="page.isNotFound" />
 
-      <Content class="vp-doc mb-auto mt-6"/>
+      <Article v-else/>
 
       <Footer/>
     </section>

@@ -1,6 +1,6 @@
 node_modules
 docs/.vitepress/cache
 *.img
-public
+/public
 firebase-debug.log
 .firebase

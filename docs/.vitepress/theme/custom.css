@@ -2,10 +2,17 @@
     min-height: 100vh;
 }
 
+/* a elements, that are outside of vp-doc, e.g. the links on the front page */
 a {
     transition: color 0.4s;
 }
 
+/* disable border radius on custom blocks */
+.custom-block {
+    border-radius: 0 !important;
+}
+
+/* set some styling for the articles */
 :root {
     --vp-font-family-base: 'Source Code Pro', monospace;
     --vp-font-family-mono: 'Source Code Pro', monospace;

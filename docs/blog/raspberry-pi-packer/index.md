@@ -1,5 +1,5 @@
 ---
-id: raspberry-pi-packer
+layout: article
 title: Automate Raspberry Pi image creation with Hashicorp Packer
 date: 03-26-2023
 tags: Raspberry Pi, Packer

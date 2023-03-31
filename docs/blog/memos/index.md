@@ -1,5 +1,5 @@
 ---
-id: raspberry-pi-router
+layout: article
 title: Memos, a self-hosted, simple stream of your notes
 date: 03-28-2023
 tags: Memos, Kubernetes, Note-taking
