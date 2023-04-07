@@ -4,6 +4,7 @@ import path from 'path'
 export default defineConfig({
     lang: 'en-US',
     title: 'orbat.sh',
+    description: 'orbat.sh',
 
     lastUpdated: true,
     cleanUrls: true,

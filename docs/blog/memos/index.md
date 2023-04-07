@@ -4,9 +4,8 @@ title: Memos, a self-hosted, simple stream of your notes
 date: 03-28-2023
 tags: Memos, Kubernetes, Note-taking
 description: |
-  Sometimes you need to note something down, maybe it's just text, or you want to save a
-  link, an image or even a PDF file. Memos is a simple note-taking application, that saves
-  your notes as an unordered stream.
+  Memos is a self-hosted application that simplifies note-taking by allowing users to save notes in a simple, unordered 
+  stream. Whether it's text, links, images, or PDF files, Memos can help you to keep track of your notes.
 ---
 
 # {{ $frontmatter.title }}
@@ -17,11 +16,13 @@ description: |
 
 ## Prerequisite
 
-You need a running Kubernetes cluster to follow this post, if you don't have one available at the moment
-I suggest you have a look at [kind](https://kind.sigs.k8s.io/).
-
+Before getting started, it's important to note that you'll need a running Kubernetes cluster to follow this post. If 
+you don't already have one available, consider using [kind](https://kind.sigs.k8s.io/) for now.
 
 ## Memos
+
+Structured note-taking can be a challenge, and there are many open-source projects available that attempt to solve 
+this problem in different ways. To see what's available, check out the up-to-date list on GitHub.
 
 Structured note-taking is a pretty tough task on its own, there are a lot of open-source projects,
 that try to solve this in different ways. You can find an up-to-date list of available projects
@@ -44,12 +45,13 @@ There is a memos [demo](https://demo.usememos.com/) available online!
 In order to deploy memos, we need several Kubernetes resources:
 
 ```shell
-.
-├── deployment.yaml
-├── kustomization.yaml
-├── namespace.yaml
-├── pvc.yaml
-└── service.yaml
+ code (1.44 KiB)
+├─  service.yaml (171 B)
+├─  deployment.yaml (744 B)
+├─  pvc.yaml (178 B)
+├─  kustomization.yaml (162 B)
+├─  pvc-hostpath.yaml (167 B)
+└─  namespace.yaml (55 B)
 ```
 
 #### kustomization.yaml
@@ -75,7 +77,7 @@ After creating the namespace, we will create a `PersistentVolumeClaim`, that is 
 
 ::: tip
 If you don't have a custom storage class available within your cluster, you can also use a volume of 
-type `hostPath`:
+type `hostPath`.
 :::
 
 ::: code-group
@@ -91,7 +93,7 @@ As we have defined a persistent volume for our memos server, we can continue to 
 
 ::: tip
 This post might be outdated pretty soon, you might want to check the official
-[Docker repository](https://hub.docker.com/r/neosmemo/memos/tags) of memos to see if there is a new version available
+[Docker repository](https://hub.docker.com/r/neosmemo/memos/tags) of memos to see if there is a new version available.
 :::
 
 #### service.yaml
