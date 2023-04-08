@@ -13,9 +13,7 @@ nachfolgend auch kurz als "Daten" bezeichnet) wir zu welchen Zwecken und in welc
 Datenschutzerklärung gilt für alle von uns durchgeführten Verarbeitungen personenbezogener Daten, sowohl im Rahmen der
 Erbringung unserer Leistungen als auch insbesondere auf unseren Webseiten, in mobilen Applikationen sowie innerhalb
 externer Onlinepräsenzen, wie z.B. unserer Social-Media-Profile (nachfolgend zusammenfassend bezeichnet als "
-Onlineangebot“).
-
-Die verwendeten Begriffe sind nicht geschlechtsspezifisch.
+Onlineangebot").
 
 Stand: 27. März 2023
 
@@ -214,7 +212,7 @@ werden.
   bestimmte Schriftfamilie angefordert wird. Bei der Google Fonts Web API muss der User-Agent die Schriftart anpassen,
   die für den jeweiligen Browsertyp generiert wird. Der User-Agent wird in erster Linie zum Debugging protokolliert und
   verwendet, um aggregierte Nutzungsstatistiken zu generieren, mit denen die Beliebtheit von Schriftfamilien gemessen
-  wird. Diese zusammengefassten Nutzungsstatistiken werden auf der Seite „Analysen“ von Google Fonts veröffentlicht.
+  wird. Diese zusammengefassten Nutzungsstatistiken werden auf der Seite "Analysen" von Google Fonts veröffentlicht.
   Schließlich wird die Verweis-URL protokolliert, sodass die Daten für die Wartung der Produktion verwendet und ein
   aggregierter Bericht zu den Top-Integrationen basierend auf der Anzahl der Schriftartenanfragen generiert werden kann.
   Google verwendet laut eigener Auskunft keine der von Google Fonts erfassten Informationen, um Profile von Endnutzern
@@ -223,7 +221,7 @@ werden.
   *Website:** [https://fonts.google.com/](https://fonts.google.com/); **Datenschutzerklärung:
   ** [https://policies.google.com/privacy](https://policies.google.com/privacy); **Weitere Informationen:
   ** [https://developers.google.com/fonts/faq/privacy?hl=de](https://developers.google.com/fonts/faq/privacy?hl=de).
-* **Google Maps:** Wir binden die Landkarten des Dienstes “Google Maps” des Anbieters Google ein. Zu den verarbeiteten
+* **Google Maps:** Wir binden die Landkarten des Dienstes "Google Maps” des Anbieters Google ein. Zu den verarbeiteten
   Daten können insbesondere IP-Adressen und Standortdaten der Nutzer gehören; **Dienstanbieter:** Google Cloud EMEA
   Limited, 70 Sir John Rogerson’s Quay, Dublin 2, Irland; **Rechtsgrundlagen:** Berechtigte Interessen (Art. 6 Abs. 1 S.
   1 lit. f) DSGVO); **Website:** [https://mapsplatform.google.com/](https://mapsplatform.google.com/); *
