@@ -20,7 +20,7 @@ are a few (fun) facts (about me):
 export default {
     title: 'kubepost',
     link: 'https://github.com/orbatschow/kontext',
-    description: ' Declarative kubeconfig management within a single binary.',
+    description: 'Declarative kubeconfig management within a single binary.',
     role: 'maintainer',
     tags: [
         'golang',
