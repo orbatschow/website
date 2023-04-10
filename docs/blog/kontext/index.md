@@ -127,7 +127,7 @@ sources:
       - $HOME/.config/kontext/kubeconfigs/prod/**/*.yaml
 ```
 
-### Groups
+### Group
 
 You can now start to use all the previously defined groups and their sources. Let's switch to the `dev` group:
 
