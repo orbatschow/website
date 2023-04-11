@@ -162,7 +162,7 @@ kontext reload
 ```
 
 ```shell
-kx get context
+kontext get context
 ```
 
 It should have extended the group to the new `kind-private` context:
