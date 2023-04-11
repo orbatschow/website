@@ -201,7 +201,7 @@ As it might be exhausting to always type the full commands, you can set some sho
 that will speed up switching between clusters:
 
 ```shell
-alias kx='kubectx'
+alias kx='kontext'
 alias kxsg='kontext set group'
 alias kxr='kontext reload'
 alias kxg='kontext get context'
