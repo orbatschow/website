@@ -158,7 +158,7 @@ kind create cluster --name private --kubeconfig $HOME/.config/kontext/kubeconfig
 Now lets reload the group and list all contexts again:
 
 ```shell
-kubectx reload
+kontext reload
 ```
 
 ```shell
@@ -181,18 +181,18 @@ three possible options:
 
 ```shell
 # this will spawn an interactive shell
-kubectx
+kontext
 ```
 
 ```shell
 # this will spawn an interactive shell
-# long form of just calling kubectx
-kubectx set context
+# long form of just calling kontext
+kontext set context
 ```
 
 ```shell
 # this will immediately set the context to the given name
-kubectx set context kind-private
+kontext set context kind-private
 ```
 
 ## Aliases
