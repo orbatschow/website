@@ -20,7 +20,7 @@ are a few (fun) facts (about me):
 export default {
     title: 'kubepost',
     link: 'https://github.com/orbatschow/kontext',
-    description: 'Declarative kubeconfig management within a single binary.',
+    description: 'Declarative kubeconfig management within a single binary',
     role: 'maintainer',
     tags: [
         'golang',
@@ -35,7 +35,7 @@ export default {
 export default {
     title: 'kubepost',
     link: 'https://github.com/orbatschow/kubepost',
-    description: 'The kubepost operator provides full lifecycle management for PostgreSQL objects.',
+    description: 'The kubepost operator provides full lifecycle management for PostgreSQL objects',
     role: 'maintainer',
     tags: [
         'golang',
@@ -51,7 +51,7 @@ export default {
 export default {
     title: 'immich',
     link: 'https://github.com/immich-app/immich',
-    description: 'Self-hosted photo and video backup solution directly from your mobile phone.',
+    description: 'Self-hosted photo and video backup solution directly from your mobile phone',
     role: 'contributor',
     tags: [
         'kubernetes',
@@ -79,7 +79,7 @@ export default {
 export default {
     title: 'ddns-updater',
     link: 'https://github.com/qdm12/ddns-updater',
-    description: 'Container to update DNS records periodically with WebUI for many DNS providers.',
+    description: 'Container to update DNS records periodically with WebUI for many DNS providers',
     role: 'contributor',
     tags: [
         'golang',
@@ -159,7 +159,7 @@ export default {
 export default {
     studies: 'Computer Science',
     graduation: 'Master of Science',
-    thesis: 'An automated security analysis of open source software based on Kubernetes.',
+    thesis: 'An automated security analysis of open source software based on Kubernetes',
     start: '03/2021',
     end: '12/2022',
     tags: [
@@ -177,7 +177,7 @@ export default {
 export default {
     studies: 'Computer Science',
     graduation: 'Bachelor of Science',
-    thesis: 'Design and implementation of a multilayer security architecture for Kubernetes.',
+    thesis: 'Design and implementation of a multilayer security architecture for Kubernetes',
     start: '09/2017',
     end: '12/2020',
     tags: [
@@ -199,7 +199,7 @@ export default {
 ```javascript
 export default {
     graduation: 'Computer Science Expert: Software Development',
-    thesis: 'Development of a sorting module for a content management system.',
+    thesis: 'Development of a sorting module for a content management system',
     start: '08/2014',
     end: '01/2017',
     tags: [
