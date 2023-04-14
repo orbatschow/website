@@ -159,7 +159,7 @@ export default {
 export default {
     studies: 'Computer Science',
     graduation: 'Master of Science',
-    thesis: 'An automated security analysis of open source software based on Kubernetes',
+    thesis: 'An automated security analysis of open source software based on Kubernetes.',
     start: '03/2021',
     end: '12/2022',
     tags: [
@@ -177,7 +177,7 @@ export default {
 export default {
     studies: 'Computer Science',
     graduation: 'Bachelor of Science',
-    thesis: 'Design and implementation of a multilayer security architecture for Kubernetes',
+    thesis: 'Design and implementation of a multilayer security architecture for Kubernetes.',
     start: '09/2017',
     end: '12/2020',
     tags: [
