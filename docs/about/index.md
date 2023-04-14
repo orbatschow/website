@@ -65,7 +65,7 @@ export default {
 export default {
     title: 'kubemod',
     link: 'https://github.com/kubemod/kubemod',
-    description: 'Universal Kubernetes mutating operator.',
+    description: 'Universal Kubernetes mutating operator',
     role: 'contributor',
     tags: [
         'golang',
