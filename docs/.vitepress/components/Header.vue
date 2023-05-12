@@ -18,10 +18,10 @@ button.negative-margin {
 export default {
   methods: {
     toggleMobileMenu() {
-      // set the hamburger menu itself to active
+      // toggle the hamburger menu
       this.$refs["hamburger"].classList.toggle("is-active")
 
-      // show the mobile-menu
+      // toggle the mobile-menu
       this.$refs["mobile-menu"].classList.toggle("hidden")
       this.$refs["mobile-menu"].classList.toggle("sm:flex")
     },
@@ -46,7 +46,7 @@ export default {
     </a>
 
     <nav class="flex self-end">
-      <!-- mobile header -->
+      <!-- mobile header (hamburger) -->
       <!-- https://github.com/jonsuh/hamburgers/issues/66#issuecomment-491905089 --->
       <button ref="hamburger" v-on:click="toggleMobileMenu"
               class="sm:!hidden negative-margin hamburger hamburger--3dxy !leading-none"

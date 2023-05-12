@@ -18,7 +18,7 @@ are a few (fun) facts (about me):
 ### <span class="underline">kontext</span>
 ```javascript
 export default {
-    title: 'kubepost',
+    title: 'kontext',
     link: 'https://github.com/orbatschow/kontext',
     description: 'Declarative kubeconfig management within a single binary',
     role: 'maintainer',
