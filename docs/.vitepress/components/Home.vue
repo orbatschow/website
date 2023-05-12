@@ -39,75 +39,40 @@ export default defineComponent({
 
   <section class="flex flex-row grow my-8">
 
-    <!-- mobile section -->
-    <div class="flex flex-col m-auto md:hidden items-center">
+    <div class="flex flex-col md:flex-row m-auto items-center">
 
-      <div class="mb-12 image-size">
+      <div class="mb-12 md:mb-0 md:mr-12 image-size">
         <img src="./assets/profile.jpg" class="rounded-full border-2 border-secondary" alt="">
       </div>
 
-      <div class="flex flex-col leading-10">
+      <div class="flex flex-col leading-10 gap-y-12 md:gap-y-8">
 
-        <!-- set font size for mobile -->
-        <div class="hero-info mb-12 text-center text-2xl font-semibold sm:hidden">
+        <div class="hero-info text-center md:text-left text-2xl sm:text-3xl font-semibold">
           Hi, I'm <span class="text-secondary">Nils</span>. I'm a Site Reliability Engineer and Open Source Enthusiast.
         </div>
 
-        <!-- change font size for tablet -->
-        <div class="hero-info mb-12 text-center text-3xl font-semibold hidden sm:block">
-          Hi, I'm <span class="text-secondary">Nils</span>. I'm a Site Reliability Engineer and Open Source Enthusiast.
-        </div>
-
-        <div class="flex justify-center flex-row flex-wrap gap-14 text-2xl">
+        <div class="flex flex-row justify-center md:justify-start flex-wrap gap-14 md:gap-8 text-2xl md:text-xl">
           <a href="https://github.com/orbatschow/" target="_blank"
-             class="hero-contact flex flex-row items-center">
-            <div v-html=icon(faGithub).html[0] />
+             class="hero-contact flex flex-row items-center gap-4 font-semibold">
+            <div v-html=icon(faGithub).html[0]></div>
+            <div class="hidden md:block">Github</div>
           </a>
           <a href="https://keys.openpgp.org/search?q=EDE3+F6C5+CFCC+20A9+53FF++2E91+0F9E+4305+534A+2380" target="_blank"
-             class="hero-contact flex flex-row items-center">
-            <div v-html=icon(faKey).html[0] />
+             class="hero-contact flex flex-row items-center gap-4 font-semibold">
+            <div v-html=icon(faKey).html[0]></div>
+            <div class="hidden md:block">OpenPGP</div>
           </a>
           <a href="https://www.linkedin.com/in/nils-orbat/" target="_blank"
-             class="hero-contact flex flex-row items-center">
-            <div v-html=icon(faLinkedin).html[0] />
+             class="hero-contact flex flex-row items-center gap-4 font-semibold">
+            <div v-html=icon(faLinkedin).html[0]></div>
+            <div class="hidden md:block">LinkedIn</div>
           </a>
         </div>
-      </div>
-    </div>
 
-    <!-- tablet and larger hero section -->
-    <div class="md:flex hidden items-center">
-
-      <div class="mr-12 image-size">
-        <img src="./assets/profile.jpg" class="rounded-full border-2 border-secondary" alt="">
-      </div>
-
-      <div class="flex flex-col leading-10">
-
-        <div class="hero-info font-semibold text-3xl">Hi, I'm <span class="text-secondary">Nils</span>. I'm a Site Reliability Engineer and
-          Open Source Enthusiast.
-        </div>
-
-        <div class="flex flex-row flex-wrap mt-8 gap-8 ">
-          <a href="https://github.com/orbatschow/" target="_blank"
-             class="hero-contact flex flex-row items-center gap-4 text-xl font-semibold">
-             <div v-html=icon(faGithub).html[0] />
-            <div>Github</div>
-          </a>
-          <a href="https://keys.openpgp.org/search?q=EDE3+F6C5+CFCC+20A9+53FF++2E91+0F9E+4305+534A+2380" target="_blank"
-             class="hero-contact flex flex-row items-center gap-4 text-xl font-semibold">
-            <div v-html=icon(faKey).html[0] />
-            <div>OpenPGP</div>
-          </a>
-          <a href="https://www.linkedin.com/in/nils-orbat/" target="_blank"
-             class="hero-contact flex flex-row items-center gap-4 text-xl font-semibold">
-            <div v-html=icon(faLinkedin).html[0] />
-            <div>LinkedIn</div>
-          </a>
-        </div>
       </div>
 
     </div>
+
   </section>
 
 </template>
