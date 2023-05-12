@@ -44,6 +44,7 @@ export default {
     <a href="/" v-on:click="closeMobileMenu" class="mr-auto whitespace-nowrap hover:text-secondary">
       nils@orbat.sh:~$ <span class="text-secondary">_</span>
     </a>
+
     <!-- mobile header -->
     <nav class="flex self-end visible sm:hidden">
       <!-- https://github.com/jonsuh/hamburgers/issues/66#issuecomment-491905089 --->
@@ -54,8 +55,8 @@ export default {
           <span class="hamburger-inner !w-8 before:!w-8 after:!w-8 !bg-font after:!bg-font before:!bg-font"></span>
         </span>
       </button>
-
     </nav>
+
     <!-- tablet and larger header -->
     <nav class="flex-row self-end hidden sm:flex">
       <ul class="flex text-end gap-x-8">
@@ -66,7 +67,6 @@ export default {
           <a class="hover:text-secondary" v-on:click="closeMobileMenu" href="/blog/">blog</a>
         </li>
       </ul>
-
     </nav>
 
     <section ref="mobile-menu"
