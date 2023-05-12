@@ -26,10 +26,10 @@ export default {
       this.$refs["mobile-menu"].classList.toggle("sm:flex")
     },
     closeMobileMenu() {
-      // set the hamburger menu itself to active
+      // set the hamburger menu itself to inactive
       this.$refs["hamburger"].classList.remove("is-active")
 
-      // show the mobile-menu
+      // hide the mobile-menu
       this.$refs["mobile-menu"].classList.remove("is-active")
       this.$refs["mobile-menu"].classList.add("hidden")
       this.$refs["mobile-menu"].classList.remove("sm:flex")
@@ -45,21 +45,19 @@ export default {
       nils@orbat.sh:~$ <span class="text-secondary">_</span>
     </a>
 
-    <!-- mobile header -->
-    <nav class="flex self-end visible sm:hidden">
+    <nav class="flex self-end">
+      <!-- mobile header -->
       <!-- https://github.com/jonsuh/hamburgers/issues/66#issuecomment-491905089 --->
       <button ref="hamburger" v-on:click="toggleMobileMenu"
-              class="negative-margin hamburger hamburger--3dxy !leading-none"
+              class="sm:!hidden negative-margin hamburger hamburger--3dxy !leading-none"
               type="button">
         <span class="hamburger-box !w-8 !block">
           <span class="hamburger-inner !w-8 before:!w-8 after:!w-8 !bg-font after:!bg-font before:!bg-font"></span>
         </span>
       </button>
-    </nav>
 
     <!-- tablet and larger header -->
-    <nav class="flex-row self-end hidden sm:flex">
-      <ul class="flex text-end gap-x-8">
+      <ul class="hidden sm:flex text-end gap-x-8">
         <li>
           <a class="hover:text-secondary" v-on:click="closeMobileMenu" href="/about/">about</a>
         </li>
@@ -69,6 +67,7 @@ export default {
       </ul>
     </nav>
 
+    <!-- show the mobile menu -->
     <section ref="mobile-menu"
              class="!bg-primary flex flex-col absolute left-0 right-0 top-20 hidden transition-transform z-10">
       <ul class="flex flex-col text-end border-t">
