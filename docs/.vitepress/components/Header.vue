@@ -67,7 +67,7 @@ export default {
       </ul>
     </nav>
 
-    <!-- show the mobile menu -->
+    <!-- mobile menu -->
     <section ref="mobile-menu"
              class="!bg-primary flex flex-col absolute left-0 right-0 top-20 hidden transition-transform z-10">
       <ul class="flex flex-col text-end border-t">
