@@ -57,7 +57,7 @@ export default defineComponent({
             <div v-html=icon(faGithub).html[0]></div>
             <div class="hidden md:block">Github</div>
           </a>
-          <a href="https://keys.openpgp.org/search?q=EDE3+F6C5+CFCC+20A9+53FF++2E91+0F9E+4305+534A+2380" target="_blank"
+          <a href="https://keys.openpgp.org/search?q=nils%40orbat.sh" target="_blank"
              class="hero-contact flex flex-row items-center gap-4 font-semibold">
             <div v-html=icon(faKey).html[0]></div>
             <div class="hidden md:block">OpenPGP</div>
