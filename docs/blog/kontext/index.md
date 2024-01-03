@@ -29,12 +29,12 @@ Our first step is to introduce a directory structure, that will allow us to segr
 into a meaningful tree:
 
 ```shell
-mkdir -p $HOME/.config/kontext/kubeconfigs/{local,dev,prod}
+mkdir -p $HOME/.config/kontext/kubeconfig/{local,dev,prod}
 ```
 
 ```shell
 .config/kontext/
-└── kubeconfigs
+└── kubeconfig
     ├── dev
     ├── local
     └── prod
@@ -47,9 +47,9 @@ You can change the tree to reflect your needs, but we will stick to this example
 You can create the Kubernetes clusters and kubeconfig files using [kind](https://kind.sigs.k8s.io/):
 
 ```shell
-kind create cluster --name local --kubeconfig $HOME/.config/kontext/kubeconfigs/local/local.yaml
-kind create cluster --name dev --kubeconfig $HOME/.config/kontext/kubeconfigs/dev/dev.yaml
-kind create cluster --name prod --kubeconfig $HOME/.config/kontext/kubeconfigs/prod/prod.yaml
+kind create cluster --name local --kubeconfig $HOME/.config/kontext/kubeconfig/local/local.yaml
+kind create cluster --name dev --kubeconfig $HOME/.config/kontext/kubeconfig/dev/dev.yaml
+kind create cluster --name prod --kubeconfig $HOME/.config/kontext/kubeconfig/prod/prod.yaml
 ```
 
 After running the previous commands, you will end up with three Kubernetes clusters for different 
@@ -105,24 +105,24 @@ sources:
   # a source called local, that defines one include and one exclude glob
   - name: default
     include:
-      - $HOME/.config/kontext/kubeconfigs/**/*.yaml
+      - $HOME/.config/kontext/kubeconfig/**/*.yaml
     exclude:
-      - $HOME/.config/kontext/kubeconfigs/**/*prod*.yaml
+      - $HOME/.config/kontext/kubeconfig/**/*prod*.yaml
 
   # a source called local, that defines one include and one no exclude glob
   - name: local
     include:
-      - $HOME/.config/kontext/kubeconfigs/local/**/*.yaml
+      - $HOME/.config/kontext/kubeconfig/local/**/*.yaml
 
   # a source called dev, that defines one include and one no exclude glob
   - name: dev
     include:
-      - $HOME/.config/kontext/kubeconfigs/dev/**/*.yaml
+      - $HOME/.config/kontext/kubeconfig/dev/**/*.yaml
         
   # a source called prod, that defines one include and no exclude glob
   - name: prod
     include:
-      - $HOME/.config/kontext/kubeconfigs/prod/**/*.yaml
+      - $HOME/.config/kontext/kubeconfig/prod/**/*.yaml
 ```
 
 ### Group
@@ -150,7 +150,7 @@ Active | Name       | Cluster    | AuthInfo
 Let's add another cluster:
 
 ```shell
-kind create cluster --name private --kubeconfig $HOME/.config/kontext/kubeconfigs/local/private.yaml
+kind create cluster --name private --kubeconfig $HOME/.config/kontext/kubeconfig/local/private.yaml
 ```
 
 Now lets reload the group and list all contexts again:
@@ -204,6 +204,21 @@ alias kxsg='kontext set group'
 alias kxr='kontext reload'
 alias kxg='kontext get context'
 ```
+
+## Cleanup
+
+Remove the kind clusters:
+
+```shell
+kind delete clusters local dev prod private
+```
+
+Delete all kubeconfig files, you just created:
+
+```shell
+rm -r $HOME/.config/kontext/kubeconfig
+```
+
 
 ## Verdict
 
