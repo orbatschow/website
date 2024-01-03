@@ -90,13 +90,33 @@ export default {
 
 ## <a>Resume</a>
 
+### <span class="underline">Team Lead Databases • Schwarz IT KG</span>
+```javascript
+export default {
+    title: 'Team Lead Databases',
+    company: 'Schwarz IT KG',
+    start: '06/2023',
+    end: 'present',
+    tags: [
+        'golang',
+        'python',
+        'kubernetes',
+        'docker',
+        'linux'
+        'ansible'
+        'people'
+        'management'
+    ]
+}
+```
+
 ### <span class="underline">Senior DevOps Engineer • credativ GmbH</span>
 ```javascript
 export default {
     title: 'Senior DevOps Engineer',
     company: 'credativ GmbH',
     start: '06/2019',
-    end: 'present',
+    end: '05/2023',
     tags: [
         'golang',
         'python',
