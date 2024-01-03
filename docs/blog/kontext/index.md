@@ -221,6 +221,6 @@ rm -r $HOME/.config/kontext
 
 ## Verdict
 
-[Kontext](https://github.com/orbatschow/kontext) can be used to manage your kubeconfig files, split them into 
+[kontext](https://github.com/orbatschow/kontext) can be used to manage your kubeconfig files, split them into 
 groups and sources and allows to switch between them very easily. It also allows for a better organisation 
 within a well-defined directory structure.
