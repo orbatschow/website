@@ -17,8 +17,8 @@ a {
     --vp-font-family-base: 'Source Code Pro', monospace;
     --vp-font-family-mono: 'Source Code Pro', monospace;
 
-    --vp-c-brand: #ffd900;
-    --vp-c-brand-dark: #ffd900;
+    --vp-c-brand-1: #ffd900;
+    --vp-c-brand-2: #ffd900;
 }
 
 .vp-doc a {
