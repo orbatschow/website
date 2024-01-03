@@ -127,10 +127,10 @@ export default {
 }
 ```
 
-### <span class="underline">Senior DevOps Engineer • credativ GmbH</span>
+### <span class="underline">Big Data Engineer • Vodafone GmbH</span>
 ```javascript
 export default {
-    title: 'Senior DevOps Engineer',
+    title: 'Big Data Engineer',
     company: 'Vodafone GmbH',
     start: '12/2018',
     end: '05/2019',
@@ -138,6 +138,7 @@ export default {
         'python',
         'data science',
         'docker'
+        'kubernetes'
     ]
 }
 ```
