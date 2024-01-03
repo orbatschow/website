@@ -213,12 +213,11 @@ Remove the kind clusters:
 kind delete clusters local dev prod private
 ```
 
-Delete all kubeconfig files, you just created:
+Delete all kontext configuration and kubeconfig files, you just created:
 
 ```shell
-rm -r $HOME/.config/kontext/kubeconfig
+rm -r $HOME/.config/kontext
 ```
-
 
 ## Verdict
 
