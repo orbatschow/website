@@ -45,13 +45,13 @@ There is a memos [demo](https://demo.usememos.com/) available online!
 In order to deploy memos, we need several Kubernetes resources:
 
 ```shell
- code (1.44 KiB)
-├─  service.yaml (171 B)
-├─  deployment.yaml (744 B)
-├─  pvc.yaml (178 B)
-├─  kustomization.yaml (162 B)
-├─  pvc-hostpath.yaml (167 B)
-└─  namespace.yaml (55 B)
+code/
+├── deployment.yaml
+├── kustomization.yaml
+├── namespace.yaml
+├── pvc-hostpath.yaml
+├── pvc.yaml
+└── service.yaml
 ```
 
 #### kustomization.yaml
