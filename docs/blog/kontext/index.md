@@ -33,13 +33,11 @@ mkdir -p $HOME/.config/kontext/kubeconfigs/{local,dev,prod}
 ```
 
 ```shell
- kubeconfigs (16.36 KiB)
-├─  prod (5.45 KiB)
-│  └─  prod.yaml (5.45 KiB)
-├─  dev (5.45 KiB)
-│  └─  dev.yaml (5.45 KiB)
-└─  local (5.46 KiB)
-   └─  local.yaml (5.46 KiB)
+.config/kontext/
+└── kubeconfigs
+    ├── dev
+    ├── local
+    └── prod
 ```
 
 ::: tip
