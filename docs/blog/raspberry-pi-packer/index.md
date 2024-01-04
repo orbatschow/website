@@ -217,7 +217,7 @@ Check the contents of the directories:
 
 ```shell
 nilsorbat in /tmp/rpi/boot 🔒
-[I] ➜  ll
+[I] ➜  ls -l
 drwxr-xr-x    - root 22 Sep  2022 overlays
 .rwxr-xr-x  30k root 30 Aug  2022 bcm2710-rpi-2-b.dtb
 .rwxr-xr-x  32k root 30 Aug  2022 bcm2710-rpi-3-b-plus.dtb
