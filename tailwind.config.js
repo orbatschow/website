@@ -1,7 +1,7 @@
 module.exports = {
     theme: {
       colors: {
-          primary: '#1e1e20',
+          primary: '#1b1b1f',
           secondary: '#ffd900',
           font: '#fffff5db',
           divider: 'rgba(82, 82, 89, 0.32)',

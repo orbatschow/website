@@ -69,7 +69,7 @@ export default {
 
     <!-- mobile menu -->
     <section ref="mobile-menu"
-             class="!bg-primary flex flex-col absolute left-0 right-0 top-20 hidden transition-transform z-10">
+             class="!bg-primary flex flex-col absolute left-0 right-0 top-20 transition-transform z-10">
       <ul class="flex flex-col text-end border-t">
         <a class="hover:text-secondary" v-on:click="toggleMobileMenu" href="/about/">
           <li class="ml-auto w-full py-6  border-b">
